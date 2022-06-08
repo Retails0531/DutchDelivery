@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StoreRegistration">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="270dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/image"
+        tools:ignore="MissingConstraints"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        >
+
+        <EditText
+            android:id="@+id/storeLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="매장 위치"
+            android:ems="8"
+            />
+
+        <Button
+            android:id="@+id/storeLoc_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="위치 설정"
+
+            />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/storeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="매장명"
+        android:layout_gravity="center"
+        android:ems="12"/>
+    <EditText
+        android:id="@+id/stdFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="기본 배달비"
+        android:layout_gravity="center"
+        android:ems="12"/>
+    <EditText
+        android:id="@+id/locFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="지역별 배달비"
+        android:layout_gravity="center"
+        android:ems="12"/>
+    <EditText
+        android:id="@+id/typeFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="주문별 배달비"
+        android:layout_gravity="center"
+        android:ems="12"/>
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:ems="13"
+        android:text="메뉴 등록"/>
+    <Button
+        android:id="@+id/btn_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="13"
+        android:text="완료"/>
+
+
+
+
+
+
+
+
+</LinearLayout>
