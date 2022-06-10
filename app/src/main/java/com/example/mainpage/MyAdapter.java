@@ -13,14 +13,12 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolderPost> {
 
     private ArrayList<Post> myDataList = null;
 
-    MyAdapter(ArrayList<Post> dataList)
-    {
+    public MyAdapter(ArrayList<Post> dataList) {
         myDataList = dataList;
     }
 
     @Override
-    public ViewHolderPost onCreateViewHolder(ViewGroup parent, int viewType)
-    {
+    public ViewHolderPost onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
@@ -32,18 +30,16 @@ public class MyAdapter extends RecyclerView.Adapter<ViewHolderPost> {
     }
 
     @Override
-    public void onBindViewHolder(ViewHolderPost viewHolder, int position)
-    {
+    public void onBindViewHolder(ViewHolderPost viewHolder, int position) {
         //ViewHolder가 관리하는 View에 position에 해당하는 데이터 바인딩
-        viewHolder.imageView.setImageResource( myDataList.get(position).getImageResourceID());
+        viewHolder.imageView.setImageResource(myDataList.get(position).getImageResourceID());
         viewHolder.title.setText(myDataList.get(position).getMovieTitle());
         viewHolder.grade.setText(myDataList.get(position).getMovieGrade());
 
     }
 
     @Override
-    public int getItemCount()
-    {
+    public int getItemCount() {
         //Adapter가 관리하는 전체 데이터 개수 반환
         return myDataList.size();
 

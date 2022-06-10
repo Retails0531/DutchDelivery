@@ -6,13 +6,12 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ViewHolderPost extends RecyclerView.ViewHolder{
+public class ViewHolderPost extends RecyclerView.ViewHolder {
     ImageView imageView;
     TextView title;
     TextView grade;
 
-    ViewHolderPost(View itemView)
-    {
+    ViewHolderPost(View itemView) {
         super(itemView);
 
         imageView = itemView.findViewById(R.id.imageView2);

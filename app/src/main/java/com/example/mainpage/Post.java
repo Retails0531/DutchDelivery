@@ -5,8 +5,7 @@ public class Post {
     private String movieTitle;
     private String movieGrade;
 
-    public Post(int id, String title, String grade)
-    {
+    public Post(int id, String title, String grade) {
         this.imageResourceID = id;
         this.movieTitle = title;
         this.movieGrade = grade;
