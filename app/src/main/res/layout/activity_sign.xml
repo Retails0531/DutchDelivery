@@ -39,7 +39,7 @@
         android:layout_below="@+id/sign_id"
         />
     <EditText
-        android:id="@+id/pw2"
+        android:id="@+id/sign_pw2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="비밀번호 확인"
@@ -58,7 +58,7 @@
 
         android:ems="10"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/pw2"
+        android:layout_below="@+id/sign_pw2"
         />
     <EditText
         android:id="@+id/email"
@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/phone"
-        android:layout_below="@+id/pw2"
+        android:layout_below="@+id/sign_pw2"
         android:layout_centerHorizontal="true"
         android:text="휴대폰 인증"
         />

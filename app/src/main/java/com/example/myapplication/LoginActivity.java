@@ -2,6 +2,7 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -30,9 +31,13 @@ public class LoginActivity extends AppCompatActivity {
                 String pw = et_pw.getText().toString();
 
 
+
+
                 connector.login_info(id,pw);
 
 
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
 
 
             }

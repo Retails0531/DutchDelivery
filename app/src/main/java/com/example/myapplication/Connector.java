@@ -43,9 +43,9 @@ public class Connector extends AppCompatActivity {
 
 
 
-    public void sign_info(String sign_id,String sign_pw, String phone, String email){
+    public void sign_info(String sign_id,String sign_pw,String sign_pw2, String phone, String email){
         try{
-            dataOutStream.writeUTF(SIGN+"///"+sign_id+"///"+sign_pw+"///"+phone+"///"+email);
+            dataOutStream.writeUTF(SIGN+"///"+sign_id+"///"+sign_pw+"///"+sign_pw2+"///"+phone+"///"+email);
         }catch(Exception e) {
 
         }
@@ -55,8 +55,6 @@ public class Connector extends AppCompatActivity {
     public  void sign_check(Boolean sign){
         if(sign.equals("SIGN_OK")){
 
-            Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-            startActivity(intent);
         }
     }
 
@@ -71,8 +69,6 @@ public class Connector extends AppCompatActivity {
     public void login_check(Boolean login){
         if(login.equals("LOGIN_OK")){
 
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intent);
         }
     }
 
