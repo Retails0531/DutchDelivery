@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tv_post"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:paddingTop="7dp"
+        android:gravity="center"
+        android:text="지역 설정"
+        android:textColor="#2F3553"
+        android:textSize="25dp"
+        android:layout_marginBottom="30dp"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        class="com.google.android.gms.maps.SupportMapFragment"/>
+
+    <TextView
+        android:id="@+id/tv_local"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:paddingTop="7dp"
+        android:gravity="center"
+        android:text="설정한 위치 알려주는 텍뷰"
+        android:textColor="#2F3553"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="구글지도맵 내위치"
+        android:background="#2F3553"/>
+
+
+</LinearLayout>

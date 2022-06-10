@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:id="@+id/tv_store"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="7dp"
+            android:gravity="center"
+            android:ems="10"
+            android:text="주문 매장"
+            android:textColor="@color/black"
+            android:inputType="textPersonName"
+            android:background="@drawable/memo_border"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="17dp"
+            android:background="@drawable/local" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="536dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="70dp">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fab_plus_btn"
+                android:src="@drawable/plus"
+                android:layout_margin="16dp"
+                app:fabSize="normal"
+                app:fabCustomSize="60dp"
+                app:elevation="6dp"
+                >
+            </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        </FrameLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fab_fast_btn"
+            android:src="@drawable/fast"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            app:fabSize="normal"
+            app:fabCustomSize="60dp"
+            app:elevation="6dp"
+            >
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+    </FrameLayout>
+
+</LinearLayout>
